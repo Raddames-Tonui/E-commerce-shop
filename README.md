@@ -5,7 +5,7 @@
 - Raddames Tonui
 - Peter Mbugua
 - Collins Mwangi
-- Michell Nyambura
+- Michelle Nyambura
 ## Project Description
     Admin can : 
             - add new product to inventory.  
