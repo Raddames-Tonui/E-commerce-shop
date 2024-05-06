@@ -1,8 +1,41 @@
-# React + Vite
+# E-commerce
+#### The app is a simple dating app project 7th May, 2024
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Developers
+- Raddames Tonui
+- Peter Mbugua
+- Collins Mwangi
+- Michell Nyambura
+## Project Description
+    Admin can : 
+            - add new product to inventory.  
+            - update existing product information  
+            - delete product if no longer in stock 
+    Users can : 
+            - view detailed information about each product 
+            - Implement search and filter functionalities 
+            - add & delete product to cart 
 
-Currently, two official plugins are available:
+## Setup/Installation Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+       
+## Important link
+- Deployed Frontend can be accessed here [Front End]()  
+- Deployed Backend can be accessed here [backend End]()
+- UI Design [Figma Design](https://www.figma.com/file/wmsZejWCQ5Q9AzasaT6Cih/Untitled?type=design&node-id=2-3&mode=design&t=BLufO13MRmf0ByR2-0)
+
+## Technologies used
+   
+    - React
+    - Tailwindcss
+    - Json
+
+## Known Bugs
+   
+
+
+## Support and contact details
+
+### License
+*Licenced under the MIT Licence
+Copyright (c) 2023 

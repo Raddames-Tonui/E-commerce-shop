@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div className='bg-green-200'>Hello world</div>
+    <div className='bg-green-600'>Hello world</div>
   )
 }
 
