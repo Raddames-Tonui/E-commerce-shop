@@ -1,0 +1,34 @@
+
+  .button {
+    display: inline-block;
+    padding: 15px 22px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #090808;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .button-1 {
+    display: inline-block;
+    padding: 15px 22px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d70e0e;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }

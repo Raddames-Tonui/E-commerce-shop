@@ -12,7 +12,7 @@
     },
     {
       "id": "0321",
-      "productName": "Dell",
+      "productName": "Delll",
       "brand": "Latitude",
       "price": "35000",
       "category": "Laptop",
@@ -149,6 +149,16 @@
       "instock": "10",
       "description": "Slim a razor",
       "imageURL": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "ca93",
+      "productName": "mitchie",
+      "brand": "lappy",
+      "price": "9000",
+      "category": "PC",
+      "instock": "80",
+      "description": "awesome",
+      "imageURL": "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }
