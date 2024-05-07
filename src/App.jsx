@@ -6,7 +6,7 @@ import Products from './Pages/Products';
 import LayoutAdmin from './LayoutAdmin';
 import AddProducts from './Pages/AddProducts';
 import AdminHome from './Pages/AdminHome';
-import Orders from './Pages/Orders'; // Assuming you have an Orders component
+import Orders from './Pages/Orders';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="products" element={<Products />} />
         </Route>
-        <Route path="/admin/" element={<LayoutAdmin />}>
+        <Route path="/admin" element={<LayoutAdmin />}>
           <Route index element={<AdminHome />} />
           <Route path="addproducts" element={<AddProducts />} />
           <Route path="orders" element={<Orders />} />
