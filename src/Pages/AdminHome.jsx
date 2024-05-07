@@ -1,8 +1,11 @@
 import React from 'react'
+import AdminProductList from '../components/AdminProductList'
 
 function AdminHome() {
   return (
-    <div>AdminHome</div>
+    <div>
+      <AdminProductList />
+    </div>
   )
 }
 

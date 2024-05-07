@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import AddProduct from '../components/AddProduct';
 
 function AddProducts() {
   return (
-    <div>AddProducts</div>
-  )
+    <div>
+      <AddProduct />
+
+    </div>
+  );
 }
 
-export default AddProducts
+export default AddProducts;
