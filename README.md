@@ -17,6 +17,7 @@
             - add & delete product to cart 
 
 ## Setup/Installation Requirements
+    - Have CRUD Operations
 
        
 ## Important link
