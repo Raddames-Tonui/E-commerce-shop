@@ -14,8 +14,7 @@ function AdminProductList() {
     console.log(products);
 
     return (
-        <div>
-            <h1></h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
             {
                 products && products.map(({ id, productName, brand, price, imageURL, description, instock }) => (
                     <AdminProductCard
@@ -27,7 +26,6 @@ function AdminProductList() {
                         imageURL={imageURL}
                         description={description}
                         instock={instock}
-
                     />
                 ))
             }

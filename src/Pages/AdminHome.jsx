@@ -3,7 +3,7 @@ import AdminProductList from '../components/AdminProductList'
 
 function AdminHome() {
   return (
-    <div>
+    <div> 
       <AdminProductList />
     </div>
   )

@@ -1,145 +1,154 @@
 {
-    "products": [
-      {
-        "id": "0320",
-        "productName": "HP",
-        "brand": "ProBook",
-        "price": "30000",
-        "category": "PC",
-        "instock": "10",
-        "description": "High-end workstation PC for professional use.",
-        "imageURL": "https://images.pexels.com/photos/13823992/pexels-photo-13823992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0321",
-        "productName": "Dell",
-        "brand": "Latitude",
-        "price": "35000",
-        "category": "Laptop",
-        "instock": "15",
-        "description": "Versatile laptop with excellent battery life.",
-        "imageURL": "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0322",
-        "productName": "Apple",
-        "brand": "MacBook Air",
-        "price": "40000",
-        "category": "Laptop",
-        "instock": "8",
-        "description": "Sleek and lightweight laptop with Retina display.",
-        "imageURL": "https://images.pexels.com/photos/7119752/pexels-photo-7119752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0323",
-        "productName": "Samsung",
-        "brand": "Galaxy S21",
-        "price": "70000",
-        "category": "Phone",
-        "instock": "20",
-        "description": "Flagship smartphone with powerful camera features.",
-        "imageURL": "https://images.pexels.com/photos/7321106/pexels-photo-7321106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0324",
-        "productName": "Sony",
-        "brand": "Bravia",
-        "price": "25000",
-        "category": "TV",
-        "instock": "12",
-        "description": "High-definition smart TV with HDR support.",
-        "imageURL": "https://images.pexels.com/photos/1070870/pexels-photo-1070870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0325",
-        "productName": "Xbox",
-        "brand": "Series X",
-        "price": "45000",
-        "category": "Gaming Console",
-        "instock": "5",
-        "description": "Next-gen gaming console for immersive gaming.",
-        "imageURL": "https://images.pexels.com/photos/5848209/pexels-photo-5848209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0326",
-        "productName": "Nintendo",
-        "brand": "Switch",
-        "price": "30000",
-        "category": "Gaming Console",
-        "instock": "10",
-        "description": "Versatile gaming console for at-home or on-the-go play.",
-        "imageURL": "https://images.pexels.com/photos/6128326/pexels-photo-6128326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0327",
-        "productName": "LG",
-        "brand": "Gram",
-        "price": "32000",
-        "category": "Laptop",
-        "instock": "18",
-        "description": "Ultra-lightweight laptop with long battery life.",
-        "imageURL": "https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0328",
-        "productName": "Google",
-        "brand": "Pixel 5",
-        "price": "60000",
-        "category": "Phone",
-        "instock": "14",
-        "description": "Premium smartphone with AI-driven features.",
-        "imageURL": "https://images.pexels.com/photos/6707201/pexels-photo-6707201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0329",
-        "productName": "Toshiba",
-        "brand": "Satellite",
-        "price": "28000",
-        "category": "Laptop",
-        "instock": "6",
-        "description": "Reliable laptop for everyday computing tasks.",
-        "imageURL": "https://images.pexels.com/photos/299515/pexels-photo-299515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0330",
-        "productName": "OnePlus",
-        "brand": "9 Pro",
-        "price": "65000",
-        "category": "Phone",
-        "instock": "9",
-        "description": "Flagship killer smartphone with high refresh rate display.",
-        "imageURL": "https://images.pexels.com/photos/6427377/pexels-photo-6427377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0331",
-        "productName": "Asus",
-        "brand": "ZenBook",
-        "price": "38000",
-        "category": "Laptop",
-        "instock": "11",
-        "description": "Premium ultrabook with slim design and powerful performance.",
-        "imageURL": "https://images.pexels.com/photos/6694917/pexels-photo-6694917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0332",
-        "productName": "Amazon",
-        "brand": "Kindle Oasis",
-        "price": "20000",
-        "category": "Tablet",
-        "instock": "7",
-        "description": "E-reader with high-resolution display and adjustable warm light.",
-        "imageURL": "https://images.pexels.com/photos/702727/pexels-photo-702727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "0333",
-        "productName": "Sony",
-        "brand": "PlayStation 5",
-        "price": "55000",
-        "category": "Gaming Console",
-        "instock": "4",
-        "description": "Next-gen gaming console with immersive gaming experiences.",
-        "imageURL": "https://images.pexels.com/photos/6113514/pexels-photo-6113514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "id": "0320",
+      "productName": "HP",
+      "brand": "ProBook",
+      "price": "30000",
+      "category": "PC",
+      "instock": "10",
+      "description": "High-end workstation PC for professional use.",
+      "imageURL": "https://images.pexels.com/photos/13823992/pexels-photo-13823992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0321",
+      "productName": "Dell",
+      "brand": "Latitude",
+      "price": "35000",
+      "category": "Laptop",
+      "instock": "15",
+      "description": "Versatile laptop with excellent battery life.",
+      "imageURL": "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0322",
+      "productName": "Apple",
+      "brand": "MacBook Air",
+      "price": "40000",
+      "category": "Laptop",
+      "instock": "8",
+      "description": "Sleek and lightweight laptop with Retina display.",
+      "imageURL": "https://images.pexels.com/photos/7119752/pexels-photo-7119752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0323",
+      "productName": "Samsung",
+      "brand": "Galaxy S21",
+      "price": "70000",
+      "category": "Phone",
+      "instock": "20",
+      "description": "Flagship smartphone with powerful camera features.",
+      "imageURL": "https://images.pexels.com/photos/7321106/pexels-photo-7321106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0324",
+      "productName": "Sony",
+      "brand": "Bravia",
+      "price": "25000",
+      "category": "TV",
+      "instock": "12",
+      "description": "High-definition smart TV with HDR support.",
+      "imageURL": "https://images.pexels.com/photos/1070870/pexels-photo-1070870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0325",
+      "productName": "Xbox",
+      "brand": "Series X",
+      "price": "45000",
+      "category": "Gaming Console",
+      "instock": "5",
+      "description": "Next-gen gaming console for immersive gaming.",
+      "imageURL": "https://images.pexels.com/photos/5848209/pexels-photo-5848209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0326",
+      "productName": "Nintendo",
+      "brand": "Switch",
+      "price": "30000",
+      "category": "Gaming Console",
+      "instock": "10",
+      "description": "Versatile gaming console for at-home or on-the-go play.",
+      "imageURL": "https://images.pexels.com/photos/6128326/pexels-photo-6128326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0327",
+      "productName": "LG",
+      "brand": "Gram",
+      "price": "32000",
+      "category": "Laptop",
+      "instock": "18",
+      "description": "Ultra-lightweight laptop with long battery life.",
+      "imageURL": "https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0328",
+      "productName": "Google",
+      "brand": "Pixel 5",
+      "price": "60000",
+      "category": "Phone",
+      "instock": "14",
+      "description": "Premium smartphone with AI-driven features.",
+      "imageURL": "https://images.pexels.com/photos/6707201/pexels-photo-6707201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0329",
+      "productName": "Toshiba",
+      "brand": "Satellite",
+      "price": "28000",
+      "category": "Laptop",
+      "instock": "6",
+      "description": "Reliable laptop for everyday computing tasks.",
+      "imageURL": "https://images.pexels.com/photos/299515/pexels-photo-299515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0330",
+      "productName": "OnePlus",
+      "brand": "9 Pro",
+      "price": "65000",
+      "category": "Phone",
+      "instock": "9",
+      "description": "Flagship killer smartphone with high refresh rate display.",
+      "imageURL": "https://images.pexels.com/photos/6427377/pexels-photo-6427377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0331",
+      "productName": "Asus",
+      "brand": "ZenBook",
+      "price": "38000",
+      "category": "Laptop",
+      "instock": "11",
+      "description": "Premium ultrabook with slim design and powerful performance.",
+      "imageURL": "https://images.pexels.com/photos/6694917/pexels-photo-6694917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0332",
+      "productName": "Amazon",
+      "brand": "Kindle Oasis",
+      "price": "20000",
+      "category": "Tablet",
+      "instock": "7",
+      "description": "E-reader with high-resolution display and adjustable warm light.",
+      "imageURL": "https://images.pexels.com/photos/702727/pexels-photo-702727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0333",
+      "productName": "Sony",
+      "brand": "PlayStation 5",
+      "price": "55000",
+      "category": "Gaming Console",
+      "instock": "4",
+      "description": "Next-gen gaming console with immersive gaming experiences.",
+      "imageURL": "https://images.pexels.com/photos/6113514/pexels-photo-6113514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "1b46",
+      "productName": "Asus",
+      "brand": "inspiron",
+      "price": "30000",
+      "category": "PC",
+      "instock": "10",
+      "description": "Slim a razor",
+      "imageURL": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+}
