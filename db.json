@@ -1,16 +1,6 @@
 {
   "products": [
     {
-      "id": "0320",
-      "productName": "HP",
-      "brand": "ProBook",
-      "price": "30000",
-      "category": "PC",
-      "instock": "10",
-      "description": "High-end workstation PC for professional use.",
-      "imageURL": "https://images.pexels.com/photos/13823992/pexels-photo-13823992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
       "id": "0321",
       "productName": "Dell",
       "brand": "Latitude",
@@ -19,16 +9,6 @@
       "instock": "15",
       "description": "Versatile laptop with excellent battery life.",
       "imageURL": "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "0322",
-      "productName": "Apple",
-      "brand": "MacBook Air",
-      "price": "40000",
-      "category": "Laptop",
-      "instock": "8",
-      "description": "Sleek and lightweight laptop with Retina display.",
-      "imageURL": "https://images.pexels.com/photos/7119752/pexels-photo-7119752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "0323",
@@ -49,16 +29,6 @@
       "instock": "12",
       "description": "High-definition smart TV with HDR support.",
       "imageURL": "https://images.pexels.com/photos/1070870/pexels-photo-1070870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "0325",
-      "productName": "Xbox",
-      "brand": "Series X",
-      "price": "45000",
-      "category": "Gaming Console",
-      "instock": "5",
-      "description": "Next-gen gaming console for immersive gaming.",
-      "imageURL": "https://images.pexels.com/photos/5848209/pexels-photo-5848209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "0326",
@@ -89,16 +59,6 @@
       "instock": "14",
       "description": "Premium smartphone with AI-driven features.",
       "imageURL": "https://images.pexels.com/photos/6707201/pexels-photo-6707201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "0329",
-      "productName": "Toshiba",
-      "brand": "Satellite",
-      "price": "28000",
-      "category": "Laptop",
-      "instock": "6",
-      "description": "Reliable laptop for everyday computing tasks.",
-      "imageURL": "https://images.pexels.com/photos/299515/pexels-photo-299515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "0330",
@@ -189,6 +149,16 @@
       "instock": "10",
       "description": "Plasma screens",
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShhyBvCqu2ZYR2MaL38xWF_VhbRjri1VOwvPYwMMYsUQ&s"
+    },
+    {
+      "id": "13b8",
+      "productName": "Asus",
+      "brand": "ProBook",
+      "price": "20000",
+      "category": "PC",
+      "instock": "11",
+      "description": "auisdnisdfsdi",
+      "imageURL": "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }

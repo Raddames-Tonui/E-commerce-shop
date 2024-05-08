@@ -1,10 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function AdminProductCard({ productName, brand, price, imageURL, description, instock }) {
-  const formattedPrice = new Intl.NumberFormat('en-KE', {
-    style: 'currency',
-    currency: 'KES'
-  }).format(price); // Format price in Kenya Shillings (KES)
+
+
+function AdminProductCard({ productName, brand, price, imageURL, description, id, instock }) {
+    const formattedPrice = new Intl.NumberFormat('en-KE', {
+        style: 'currency',
+        currency: 'KES'
+    }).format(price); // Format price in Kenya Shillings (KES)
+
+    function handleDelete(id) {
+      fetch(`http://localhost:3000/products/${id}`, {
+          method: "DELETE",
+      })
+      .then(() => {
+          window.alert('Product deleted successfully');
+          window.location.reload();
+      })
+      
+  }
 
   return (
     <div className="w-72 bg-white border border-gray-400 rounded-lg shadow-lg overflow-hidden ">
@@ -26,12 +40,12 @@ function AdminProductCard({ productName, brand, price, imageURL, description, in
           </span>
         </div>
         <div className="flex justify-end mt-3">
-          <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Update</a>
-          <a href="#" className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center ml-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Delete</a>
+          <Link to={`/admin/update/:${id}`}  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Update</Link>
+          <button className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center ml-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800" onClick={() => handleDelete(id)}>Delete</button>
         </div>
       </div>
     </div>
   );
 }
-
+ 
 export default AdminProductCard;
