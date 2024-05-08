@@ -148,7 +148,47 @@
       "category": "PC",
       "instock": "10",
       "description": "Slim a razor",
-      "imageURL": "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "imageURL": "https://www.pexels.com/photo/macbook-pro-beside-white-ipad-4158/"
+    },
+    {
+      "id": "3200",
+      "productName": "Toshiba",
+      "brand": "light",
+      "price": "25000",
+      "category": "PC",
+      "instock": "4",
+      "description": "High end speed processors",
+      "imageURL": "https://images.pexels.com/photos/16645421/pexels-photo-16645421/free-photo-of-toshiba-laptop-and-black-mouse-on-white-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "28b2",
+      "productName": "ssssss",
+      "brand": "ProBook",
+      "price": "44444",
+      "category": "PH",
+      "instock": "0",
+      "description": "Slim razor\n",
+      "imageURL": "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "a751",
+      "productName": "Techno",
+      "brand": "techno",
+      "price": "4000",
+      "category": "PH",
+      "instock": "0",
+      "description": "ssss",
+      "imageURL": "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "2a24",
+      "productName": "Samsung tv",
+      "brand": "smsung",
+      "price": "50000",
+      "category": "TV",
+      "instock": "10",
+      "description": "Plasma screens",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShhyBvCqu2ZYR2MaL38xWF_VhbRjri1VOwvPYwMMYsUQ&s"
     }
   ]
 }

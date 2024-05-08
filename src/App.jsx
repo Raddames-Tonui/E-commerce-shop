@@ -6,7 +6,8 @@ import Products from './Pages/Products';
 import LayoutAdmin from './LayoutAdmin';
 import AddProducts from './Pages/AddProducts';
 import AdminHome from './Pages/AdminHome';
-import Orders from './Pages/Orders'; // Assuming you have an Orders component
+import Orders from './Pages/Orders'; 
+import NoPage from './Pages/NoPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="addproducts" element={<AddProducts />} />
           <Route path="orders" element={<Orders />} />
         </Route>
+        <Route path="*" element={<NoPage/>} />
       </Routes>
     </BrowserRouter>
   );
