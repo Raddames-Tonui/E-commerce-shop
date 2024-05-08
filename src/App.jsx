@@ -8,6 +8,7 @@ import AddProducts from './Pages/AddProducts';
 import AdminHome from './Pages/AdminHome';
 import Orders from './Pages/Orders'; 
 import NoPage from './Pages/NoPage';
+import UpdateProduct from './components/ProductUpdate';
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="products" element={<Products />} />
         </Route>
-        <Route path="/admin/" element={<LayoutAdmin />}>
+        <Route path="/admin" element={<LayoutAdmin />}>
           <Route index element={<AdminHome />} />
           <Route path="addproducts" element={<AddProducts />} />
           <Route path="orders" element={<Orders />} />
+          <Route path="/admin/update/:id" element={<UpdateProduct />} />
         </Route>
         <Route path="*" element={<NoPage/>} />
       </Routes>
