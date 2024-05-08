@@ -39,7 +39,7 @@ function UpdateProduct() {
         };
 
         fetchProductData(); 
-    }, [id]);
+    }, [id,]);
 
     function resetForm() {
         setFormData({
@@ -124,7 +124,8 @@ function UpdateProduct() {
                         <button type="submit" className="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
                          Update product
                         </button>
-                        <Link to={"/admin"} className="button_">Go back</Link> 
+                        <Link to={"/admin"} className="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800"
+                        >Go back</Link> 
                         </div>
                     </form>
                 </div>

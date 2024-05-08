@@ -15,7 +15,7 @@ function AdminProductCard({ productName, brand, price, imageURL, description, id
             method: "DELETE",
         })
         .then(() => {
-            //window.alert('Product deleted successfully');
+            window.alert('Product deleted successfully');
             window.location.reload();
         })
         
