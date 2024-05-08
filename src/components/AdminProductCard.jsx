@@ -7,7 +7,7 @@ function AdminProductCard({ productName, brand, price, imageURL, description, in
   }).format(price); // Format price in Kenya Shillings (KES)
 
   return (
-    <div className="w-72 bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+    <div className="w-72 bg-white border border-gray-400 rounded-lg shadow-lg overflow-hidden ">
       <div className="h-36 relative">
         <a href="#">
           <img className="absolute top-0 left-0 w-full h-full object-cover" src={imageURL} alt="product image" />
