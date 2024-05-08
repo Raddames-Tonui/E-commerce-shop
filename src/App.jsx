@@ -9,6 +9,7 @@ import AdminHome from './Pages/AdminHome';
 import Orders from './Pages/Orders'; 
 import NoPage from './Pages/NoPage';
 import UpdateProduct from './components/ProductUpdate';
+import Cart from './Pages/Cart';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="products" element={<Products />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/cart" element={<Cart/>} />
         </Route>
         <Route path="/admin" element={<LayoutAdmin />}>
           <Route index element={<AdminHome />} />
