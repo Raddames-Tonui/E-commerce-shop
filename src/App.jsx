@@ -8,6 +8,7 @@ import AddProducts from './Pages/AddProducts';
 import AdminHome from './Pages/AdminHome';
 import Orders from './Pages/Orders'; // Assuming you have an Orders component
 
+
 function App() {
   return (
     <BrowserRouter>
