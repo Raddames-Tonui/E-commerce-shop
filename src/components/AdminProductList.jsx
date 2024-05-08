@@ -27,6 +27,7 @@ function AdminProductList() {
 
     console.log(productsByCategory);
 
+    
     return (
         <div>
             {
