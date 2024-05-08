@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import ProductSearch from './ProductSearch';
 
 function Product() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
     fetch('db.json')
       .then(response => response.json())
       .then(data => {
         setProducts(data.products);
+        setFilteredProducts(data.products);
       })
       .catch(error => console.error('Error fetching data:', error));
   }, []);
@@ -20,10 +23,18 @@ function Product() {
     }
   };
 
+  const handleSearch = (searchQuery) => {
+    const filtered = products.filter(product =>
+      product.productName.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setFilteredProducts(filtered);
+  };
+
   return (
     <div className="bg-red-900 h-screen m-1 p-10">
+      <ProductSearch onSearch={handleSearch} />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {products.map(product => (
+        {filteredProducts.map(product => (
           <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
             <img className="w-full h-64 object-cover object-center" src={product.imageURL} alt={product.productName} />
             <div className="p-6">
