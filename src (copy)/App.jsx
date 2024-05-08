@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
-import LayoutAdmin from './LayoutAdmin';
 import Home from './Pages/Home';
 import Products from './Pages/Products';
+import LayoutAdmin from './LayoutAdmin';
 import AddProducts from './Pages/AddProducts';
 import AdminHome from './Pages/AdminHome';
 import Orders from './Pages/Orders'; 
