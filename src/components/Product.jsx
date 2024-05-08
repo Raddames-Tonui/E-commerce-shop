@@ -5,6 +5,12 @@ function Product() {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
+    // Load cart from browser storage on component mount
+    const savedCart = JSON.parse(localStorage.getItem('cart'));
+    if (savedCart) {
+      setCart(savedCart);
+    }
+
     fetch('db.json')
       .then(response => response.json())
       .then(data => {
@@ -13,15 +19,54 @@ function Product() {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
+  useEffect(() => {
+    // Save cart to browser storage whenever it changes
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
+
   const addToCart = (productId) => {
     const productToAdd = products.find(product => product.id === productId);
     if (productToAdd) {
+      const updatedProducts = products.map(product => {
+        if (product.id === productId && product.instock > 0) {
+          return { ...product, instock: product.instock - 1 };
+        }
+        return product;
+      });
       setCart([...cart, productToAdd]);
+      setProducts(updatedProducts);
+      updateServer(updatedProducts);
     }
   };
 
+  const removeFromCart = (productId) => {
+    const updatedCart = cart.filter(item => item.id !== productId);
+    const updatedProduct = products.map(product => {
+      if (product.id === productId) {
+        return { ...product, instock: product.instock + 1 };
+      }
+      return product;
+    });
+    setCart(updatedCart);
+    setProducts(updatedProduct);
+    updateServer(updatedProduct);
+  };
+
+  const updateServer = (updatedProducts) => {
+    fetch('http://localhost:3000', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ products: updatedProducts }),
+    })
+      .then(response => response.json())
+      .then(data => console.log('Server response:', data))
+      .catch(error => console.error('Error updating server:', error));
+  };
+
   return (
-    <div className="bg-red-900 h-screen m-1 p-10">
+    <div id="Products" className="bg-red-900 h-screen m-1 p-10 overflow-y-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map(product => (
           <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -38,6 +83,22 @@ function Product() {
           </div>
         ))}
       </div>
+      {cart.length > 0 && (
+        <div className="bg-white border-gray-200 dark:bg-gray-900 md-h-screen m-0.5 p-4 w-1/2 overflow-y-auto max-h-96 flex flex-col">
+          <h1 className="text-2xl font-bold mb-4">Cart</h1>
+          {cart.map(item => (
+            <div key={item.id} className="flex items-center border-b border-gray-200 py-4">
+              <img className="w-16 h-16 object-cover rounded" src={item.imageURL} alt={item.productName} />
+              <div className="ml-4">
+                <h2 className="text-lg font-semibold">{item.productName}</h2>
+                <p className="text-gray-700">{item.description}</p>
+                <p className="text-gray-600">Price: ${item.price}</p>
+                <button className="mt-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => removeFromCart(item.id)}>Remove</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
