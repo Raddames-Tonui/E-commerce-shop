@@ -99,6 +99,16 @@
       "instock": "11",
       "description": "auisdnisdfsdi",
       "imageURL": "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "0b5d",
+      "productName": "mitchie",
+      "brand": "light",
+      "price": "200000",
+      "category": "GA",
+      "instock": "20",
+      "description": "wow!",
+      "imageURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPEBAQEBAPEA8QEBUVEBUQFRAQEBYSFRUWFhYWFRUYHSggGBolHRcVITEhJSkrLi4uGB8zODMtNygtLi4BCgoKDg0OGhAQGisfHR4tLS0tKystLS4rLS0rNy0tLS0tLS0tLS0tLS0tNy0uLS0tLS0tKy0tKy0tLS0tKy0tN//AABEIAKIBNwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABCEAACAQIDBAYFCgQFBQAAAAABAgADEQQSIQUxQVEGEyJxgZEHMmGhsQgjM0JSU2KSwcIUcoKiQ7LR4fAkNWODk//EABoBAQADAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAsEQEBAAICAQIEAwkAAAAAAAAAAQIRAxIhMUEEMlGBBRPhFCNCYXGRwdHw/9oADAMBAAIRAxEAPwD12EISQQiwgEIRYCRYRZAICKBFtAIsIQCeYfKBrkbOw9MH6TGLfuWnUPxtPUJ458ojEabOpcC9Zz4Cmo/zGTjN3Q8iUydHlYGSU2nuRfGrYaF7aiRiPEtXTxZ9a21fMoPMRjSvs+sMuQnUHTu/5eWGnqcfJ2xlcXJh1ysMIHskGJwqVBZhe2o1I+EmJjSZbKY5TVm4yZ7bIpHdmHcf9YUNlKrBgzG3O3KXoAzn/ZeDtMus3DdNbDqd6qe8AyJsBSP+Gvhp8JZBiZprlx8d9cZfshXOycPk/wAQVM+4E5clt9yd9+EjXYlPTLWZSXy63FhpZyQN2p4303S7I6zcJz5fB8F/hi27ouHw+MQUzS2jVTrCQAK1RGSxtd7MMo5HlNDB7b2+gHU7QxDgKzdqp1vZT1j2wdBMq8Rqlu+YZfh/BfbX3v8As7V02H9IPSOkAWcVVIBBqUKRBB1BuoW4l3D+mbatM/PYXCuBvstWm3mGI904tcZUAIDsARYgEgEciOIjn2tXylTUc"
     }
   ]
 }
