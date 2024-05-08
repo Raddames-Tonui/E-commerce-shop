@@ -10,6 +10,7 @@ import Orders from './Pages/Orders';
 import NoPage from './Pages/NoPage';
 import UpdateProduct from './components/ProductUpdate';
 
+
 function App() {
   return (
     <BrowserRouter>
