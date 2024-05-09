@@ -75,7 +75,7 @@ function Product() {
     setFilteredProducts(filtered);
   };
   return (
-    <div id="Products" className="bg-red-900 h-screen m-1 p-10 overflow-y-auto">
+    <div id="Products" className="bg-slate-200 h-screen m-1 p-10 overflow-y-auto">
       <ProductSearch onSearch={handleSearch} />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filteredProducts.map(product => (
