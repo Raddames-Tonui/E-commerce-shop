@@ -13,14 +13,22 @@ function AddProduct() {
     function handleSubmit(event) {
         event.preventDefault();
 
+        console.log('Form Data:', formData); // Log form data for debugging
+
         fetch('https://e-commerce-shop-3.onrender.com/products', {
             method: 'POST',
             body: JSON.stringify(formData),
             headers: { 'Content-type': 'application/json;' },
         })
-        .then((response) => response.json())
-        .then((data) => 
-            setFormData({
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then((data) => {
+            console.log('Server Response:', data); // Log server response for debugging
+            setFormData({ // Reset form fields after successful submission
                 productName: '',
                 brand: '',
                 price: '',
@@ -28,8 +36,11 @@ function AddProduct() {
                 instock: '',
                 imageURL : '',
                 description: '',  
-            })
-        );
+            });
+        })
+        .catch((error) => {
+            console.error('Error:', error); // Log any errors during fetch
+        });
     }
 
     function handleChange(event) {
@@ -73,10 +84,10 @@ function AddProduct() {
                                 <input type="number" name="instock" id="instock" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="12" required value={formData.instock} onChange={handleChange} />
                             </div>
                             <div className="sm:col-span-2">
-                            <div className="sm:col-span-2">
-                                <label htmlFor="productName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Image</label>
+                                <label htmlFor="imageURL" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Image URL</label>
                                 <input type="text" name="imageURL" id="imageURL" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Add image URL" required value={formData.imageURL} onChange={handleChange} />
                             </div>
+                            <div className="sm:col-span-2">
                                 <label htmlFor="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
                                 <textarea name="description" id="description" rows="5" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Short Description about the product..." value={formData.description} onChange={handleChange}></textarea>
                             </div>

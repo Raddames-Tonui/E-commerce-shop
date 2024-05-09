@@ -13,11 +13,11 @@ function Product() {
       setCart(savedCart);
     }
 
-    fetch('db.json')
+    fetch('https://e-commerce-shop-3.onrender.com/products')
       .then(response => response.json())
       .then(data => {
-        setProducts(data.products);
-        setFilteredProducts(data.products);
+        setProducts(data);
+        setFilteredProducts(data);
       })
       .catch(error => console.error('Error fetching data:', error));
   }, []);
@@ -57,7 +57,7 @@ function Product() {
   };
 
   const updateServer = (updatedProducts) => {
-    fetch('http://localhost:3000', {
+    fetch('https://e-commerce-shop-3.onrender.com/products', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -90,27 +90,12 @@ function Product() {
                 <span className="font-bold text-lg">Price: ${product.price}</span>
                 <span className="text-gray-600">In Stock: {product.instock}</span>
               </div>
-              <button className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => addToCart(product.id)}>Add to Cart</button>
+              <button className="mt-2 bg-[#9745CD] hover:bg-[#58139A] text-white font-bold py-2 px-4 rounded" onClick={() => addToCart(product.id)}>Add to Cart</button>
             </div>
           </div>
         ))}
       </div>
-      {cart.length > 0 && (
-        <div className="bg-white border-gray-200 dark:bg-gray-900 md-h-screen m-0.5 p-4 w-1/2 overflow-y-auto max-h-96 flex flex-col">
-          <h1 className="text-2xl font-bold mb-4">Cart</h1>
-          {cart.map(item => (
-            <div key={item.id} className="flex items-center border-b border-gray-200 py-4">
-              <img className="w-12 h-12 object-cover rounded" src={item.imageURL} alt={item.productName} />
-              <div className="ml-4">
-                <h2 className="text-md font-semibold">{item.productName}</h2>
-                <p className="text-gray-700">{item.description}</p>
-                <p className="text-gray-600">Price: ${item.price}</p>
-                <button className="mt-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => removeFromCart(item.id)}>Remove</button>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
+        
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Product from '../components/Product'
 
 function Home() {
   return (
-    <div>
+    <div >
         <Product />
         
     </div>
