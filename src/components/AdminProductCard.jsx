@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function AdminProductCard({ productName, brand, price, imageURL, description, id, instock }) {
     const formattedPrice = new Intl.NumberFormat('en-KE', {
@@ -8,14 +9,29 @@ function AdminProductCard({ productName, brand, price, imageURL, description, id
     }).format(price); // Format price in Kenya Shillings (KES)
 
     function handleDelete(id) {
-        fetch(`https://e-commerce-shop-3.onrender.com/products/${id}`, {
-            method: "DELETE",
-        })
-        .then(() => {
-            window.alert('Product deleted successfully');
-            window.location.reload();
-        })
-    }
+
+      fetch(`https://e-commerce-shop-3.onrender.com/products/${id}`, {
+          method: "DELETE",
+      })
+      .then(() => {
+          toast.success('Product deleted successfully');
+          window.location.reload();
+      })
+      
+  }
+
+  function handleDelete(id) {
+    fetch(`https://e-commerce-shop-3.onrender.com/products/${id}`, {
+        method: "DELETE",
+    })
+    .then(() => {
+      toast.success('Product deleted successfully')
+        window.location.reload();
+    })
+    
+}
+
+
 
     return (
         <div className="w-72 bg-white border border-gray-400 rounded-lg shadow-lg overflow-hidden ">
