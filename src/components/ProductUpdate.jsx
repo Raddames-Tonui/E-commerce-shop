@@ -18,7 +18,7 @@ function UpdateProduct() {
     useEffect(() => {
         const fetchProductData = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/products/${id}`);
+                const response = await fetch(`https://e-commerce-shop-3.onrender.com/products/${id}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch product data');
                 }
@@ -57,7 +57,7 @@ function UpdateProduct() {
     function handleSubmit(event) {
         event.preventDefault();
 
-        fetch(`http://localhost:3000/products/${id}`, {
+        fetch(`https://e-commerce-shop-3.onrender.com/products/${id}`, {
             method: 'PATCH',
             body: JSON.stringify(formData),
             headers: { 'Content-Type': 'application/json' },

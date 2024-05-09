@@ -18,10 +18,10 @@ export default function Cart() {
   };
 
   return (
-    <div className='flex  mx-auto h-screen bg-slate-200'>
+    <div className='flex  justify-center h-screen bg-slate-200'>
       {cart && cart.length > 0 && (
-        <div className="bg-white border-gray-200 dark:bg-gray-900 md-h-screen m-0.5 p-4 w-1/2 overflow-y-auto max-h-96 flex flex-col">
-          <h1 className="text-2xl font-bold mb-4">Cart</h1>
+        <div className="bg-white border-gray-700 dark:bg-gray-900 md-h-screen m-0.5 p-4 w-1/2 overflow-y-auto  flex flex-col">
+          <h1 className="text-2xl text-center font-bold mb-4">Cart</h1>
           {cart.map(item => (
             <div key={item.id} className="flex items-center border-b border-gray-200 py-4">
               <img className="w-12 h-12 object-cover rounded" src={item.imageURL} alt={item.productName} />
