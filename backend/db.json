@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": "0323",
+      "productName": "Samsung Galaxy S21",
+      "brand": "Samsung",
+      "price": 70000,
+      "category": "phones",
+      "instock": 20,
+      "description": "Flagship smartphone with powerful camera features.",
+      "imageURL": "https://istore.ke/wp-content/uploads/2021/10/Apple-iPhone-13-Pro-.jpeg"
+    },
+    {
+      "id": "1245",
+      "productName": "Dell XPS 13",
+      "brand": "Dell",
+      "price": 90000,
+      "category": "laptops",
+      "instock": 15,
+      "description": "Ultra-portable laptop with stunning display and performance.",
+      "imageURL": ""
+    },
+    {
+      "id": "2156",
+      "productName": "Sony PlayStation 5",
+      "brand": "Sony",
+      "price": 55000,
+      "category": "gaming consoles",
+      "instock": 10,
+      "description": "Next-gen gaming console with high-fidelity graphics.",
+      "imageURL": ""
+    },
+    {
+      "id": "3890",
+      "productName": "LG 65-Inch 4K Smart TV",
+      "brand": "LG",
+      "price": 80000,
+      "category": "tv/monitors",
+      "instock": 8,
+      "description": "Immersive viewing experience with 4K resolution and smart features.",
+      "imageURL": ""
+    },
+    {
+      "id": "4781",
+      "productName": "Apple MacBook Pro",
+      "brand": "Apple",
+      "price": 120000,
+      "category": "laptops",
+      "instock": 12,
+      "description": "Powerful laptop for professionals with stunning Retina display.",
+      "imageURL": ""
+    },
+    {
+      "id": "5412",
+      "productName": "OnePlus 9 Pro",
+      "brand": "OnePlus",
+      "price": 65000,
+      "category": "phones",
+      "instock": 18,
+      "description": "High-performance Android smartphone with Hasselblad camera.",
+      "imageURL": "https://www.saruk.co.ke/images/99141643707867.jpeg"
+    },
+    {
+      "id": "6345",
+      "productName": "ASUS ROG Strix G15",
+      "brand": "ASUS",
+      "price": 85000,
+      "category": "laptops",
+      "instock": 9,
+      "description": "Gaming laptop with powerful specs and RGB lighting.",
+      "imageURL": ""
+    },
+    {
+      "id": "7123",
+      "productName": "Samsung 49-Inch Curved Gaming Monitor",
+      "brand": "Samsung",
+      "price": 60000,
+      "category": "tv/monitors",
+      "instock": 6,
+      "description": "Immersive curved monitor for gaming enthusiasts.",
+      "imageURL": ""
+    },
+    {
+      "id": "8012",
+      "productName": "Xbox Series X",
+      "brand": "Microsoft",
+      "price": 55000,
+      "category": "gaming consoles",
+      "instock": 11,
+      "description": "Next-gen gaming console with high-performance gaming capabilities.",
+      "imageURL": ""
+    },
+    {
+      "id": "8990",
+      "productName": "HP Pavilion Desktop",
+      "brand": "HP",
+      "price": 70000,
+      "category": "personal computers",
+      "instock": 14,
+      "description": "Versatile desktop computer for home and office use.",
+      "imageURL": ""
+    },
+    {
+      "id": "9234",
+      "productName": "Google Pixel 6",
+      "brand": "Google",
+      "price": 65000,
+      "category": "phones",
+      "instock": 16,
+      "description": "Innovative Android smartphone with exceptional camera capabilities.",
+      "imageURL": ""
+    },
+    {
+      "id": "10001",
+      "productName": "LG UltraGear 27-Inch Gaming Monitor",
+      "brand": "LG",
+      "price": 35000,
+      "category": "tv/monitors",
+      "instock": 7,
+      "description": "High-refresh rate monitor for smooth gaming experience.",
+      "imageURL": ""
+    }
+  ]
+}
