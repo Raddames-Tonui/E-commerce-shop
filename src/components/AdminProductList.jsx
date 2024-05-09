@@ -34,7 +34,7 @@ function AdminProductList() {
                 // returns an array containing the keys of the productsByCategory object, which are the categories.
                 Object.keys(productsByCategory).map((category) => (
                     <div key={category} >
-                        <h2 className='font-bold text-xl underline underline-offset-2 p-3 flex justify-center text-[] '>{category}</h2>
+                        <h2 className='font-bold text-xl underline underline-offset-2 p-3 flex justify-center '>{category}</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mx-auto">
                             {productsByCategory[category].map(({ id, productName, brand, price, imageURL, description, instock }) => (
                                 <AdminProductCard

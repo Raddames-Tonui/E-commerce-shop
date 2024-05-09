@@ -68,27 +68,29 @@ function Product() {
       .then(data => console.log('Server response:', data))
       .catch(error => console.error('Error updating server:', error));
   };
+
   const handleSearch = (searchQuery) => {
     const filtered = products.filter(product =>
       product.productName.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setFilteredProducts(filtered);
   };
+
   return (
     <div id="Products" className="bg-slate-200 h-screen m-1 p-10 overflow-y-auto">
       <ProductSearch onSearch={handleSearch} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {filteredProducts.map(product => (
-          <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img className="w-full h-64 object-cover object-center" src={product.imageURL} alt={product.productName} />
-            <div className="p-6">
-              <h2 className="text-xl font-semibold mb-2">{product.productName}</h2>
-              <p className="text-gray-600 mb-4">{product.description}</p>
+          <div key={product.id} className="bg-white rounded-lg shadow-sm overflow-hidden ">
+            <img className="w-full h-48 object-cover object-center" src={product.imageURL} alt={product.productName} />
+            <div className="p-4">
+              <h2 className="text-lg font-semibold mb-2">{product.productName}</h2>
+              <p className="text-gray-600 mb-2">{product.description}</p>
               <div className="flex items-center justify-between">
-                <span className="font-bold text-xl">Price: ${product.price}</span>
+                <span className="font-bold text-lg">Price: ${product.price}</span>
                 <span className="text-gray-600">In Stock: {product.instock}</span>
               </div>
-              <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => addToCart(product.id)}>Add to Cart</button>
+              <button className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => addToCart(product.id)}>Add to Cart</button>
             </div>
           </div>
         ))}
@@ -98,9 +100,9 @@ function Product() {
           <h1 className="text-2xl font-bold mb-4">Cart</h1>
           {cart.map(item => (
             <div key={item.id} className="flex items-center border-b border-gray-200 py-4">
-              <img className="w-16 h-16 object-cover rounded" src={item.imageURL} alt={item.productName} />
+              <img className="w-12 h-12 object-cover rounded" src={item.imageURL} alt={item.productName} />
               <div className="ml-4">
-                <h2 className="text-lg font-semibold">{item.productName}</h2>
+                <h2 className="text-md font-semibold">{item.productName}</h2>
                 <p className="text-gray-700">{item.description}</p>
                 <p className="text-gray-600">Price: ${item.price}</p>
                 <button className="mt-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => removeFromCart(item.id)}>Remove</button>
