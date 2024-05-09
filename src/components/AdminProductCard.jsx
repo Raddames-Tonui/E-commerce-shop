@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 function AdminProductCard({ productName, brand, price, imageURL, description, id, instock }) {
@@ -13,7 +14,7 @@ function AdminProductCard({ productName, brand, price, imageURL, description, id
           method: "DELETE",
       })
       .then(() => {
-          window.alert('Product deleted successfully');
+          toast.success('Product deleted successfully');
           window.location.reload();
       })
       
@@ -24,7 +25,7 @@ function AdminProductCard({ productName, brand, price, imageURL, description, id
         method: "DELETE",
     })
     .then(() => {
-        window.alert('Product deleted successfully');
+      toast.success('Product deleted successfully')
         window.location.reload();
     })
     

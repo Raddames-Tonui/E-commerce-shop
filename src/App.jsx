@@ -9,11 +9,15 @@ import AdminHome from './Pages/AdminHome';
 import Orders from './Pages/Orders'; 
 import NoPage from './Pages/NoPage';
 import UpdateProduct from './components/ProductUpdate';
-import Cart from './Pages/Cart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
+  const notify = () => toast("This is a toast notification !");
   return (
+
+    <>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -30,6 +34,12 @@ function App() {
         <Route path="*" element={<NoPage/>} />
       </Routes>
     </BrowserRouter>
+    <div>
+        <button onClick={notify}>Notify !</button>
+        <ToastContainer />
+      </div>
+
+</>
   );
 }
 
