@@ -5,9 +5,8 @@ import NavbarAdmin from './components/NavbarAdmin';
 function LayoutAdmin() {
   return (
     <div className='space-y-16'>
-        <NavbarAdmin />
-      <Outlet />
-      
+      <NavbarAdmin />
+      <Outlet />      
     </div>
   );
 }

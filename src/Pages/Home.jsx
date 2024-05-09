@@ -1,10 +1,11 @@
 import React from 'react'
-import Landing from '../components/Landing'
+// import Landing from '../components/Landing'
+import Product from '../components/Product'
 
 function Home() {
   return (
     <div>
-        <Landing />
+        <Product />
         
     </div>
   )
