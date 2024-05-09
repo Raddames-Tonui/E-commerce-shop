@@ -5,7 +5,7 @@ function AdminProductList() {
     const [productsByCategory, setProductsByCategory] = useState({});
 
     useEffect(() => {
-        fetch('http://localhost:3000/products') 
+        fetch('https://e-commerce-shop-3.onrender.com/products') 
             .then((response) => response.json())
             .then((data) => {
                 // Group products by category

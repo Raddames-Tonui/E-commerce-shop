@@ -9,7 +9,7 @@ function AdminProductCard({ productName, brand, price, imageURL, description, id
     }).format(price); // Format price in Kenya Shillings (KES)
 
     function handleDelete(id) {
-      fetch(`http://localhost:3000/products/${id}`, {
+      fetch(`https://e-commerce-shop-3.onrender.com/products/${id}`, {
           method: "DELETE",
       })
       .then(() => {
@@ -20,7 +20,7 @@ function AdminProductCard({ productName, brand, price, imageURL, description, id
   }
 
   function handleDelete(id) {
-    fetch(`http://localhost:3000/products/${id}`, {
+    fetch(`https://e-commerce-shop-3.onrender.com/products/${id}`, {
         method: "DELETE",
     })
     .then(() => {

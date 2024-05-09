@@ -13,7 +13,7 @@ function AddProduct() {
     function handleSubmit(event) {
         event.preventDefault();
 
-        fetch('http://localhost:3000/products', {
+        fetch('https://e-commerce-shop-3.onrender.com/products', {
             method: 'POST',
             body: JSON.stringify(formData),
             headers: { 'Content-type': 'application/json;' },
