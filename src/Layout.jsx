@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 function Layout() {
   return (
-    <div>
+    <div className='space-y-16'>
       <NavbarUser />
       <Outlet/>
     </div>
