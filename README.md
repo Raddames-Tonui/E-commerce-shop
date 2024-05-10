@@ -20,8 +20,8 @@
 
        
 ## Important link
-- Deployed Frontend can be accessed here [Front End]()  
-- Deployed Backend can be accessed here [backend End]()
+- Deployed Frontend can be accessed here [Front End](https://e-commerce-shop-ruddy.vercel.app/)  
+- Deployed Backend can be accessed here [backend End](https://e-commerce-shop-3.onrender.com/products)
 - UI Design [Figma Design](https://www.figma.com/file/wmsZejWCQ5Q9AzasaT6Cih/Untitled?type=design&node-id=2-3&mode=design&t=BLufO13MRmf0ByR2-0)
 
 ## Technologies used
