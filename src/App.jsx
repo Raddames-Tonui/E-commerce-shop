@@ -11,6 +11,7 @@ import NoPage from './Pages/NoPage';
 import UpdateProduct from './components/ProductUpdate';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Cart from './Pages/Cart';
 
 
 function App() {
